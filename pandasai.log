@@ -1,0 +1,20 @@
+2023-09-07 21:15:48 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/home/cnmfs/.pyenv/versions/3.10.4/envs/venv-streamlit-3.10.4/lib/python3.10/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/cnmfs/ciadosorriso-pyspark/data/cs-relatorios-repasses/pandasai.json'
+2023-09-07 21:19:27 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/home/cnmfs/.pyenv/versions/3.10.4/envs/venv-streamlit-3.10.4/lib/python3.10/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/cnmfs/ciadosorriso-pyspark/data/cs-relatorios-repasses/pandasai.json'
+2023-09-07 21:19:27 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/home/cnmfs/.pyenv/versions/3.10.4/envs/venv-streamlit-3.10.4/lib/python3.10/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/cnmfs/ciadosorriso-pyspark/data/cs-relatorios-repasses/pandasai.json'
+2023-09-07 21:23:41 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/home/cnmfs/.pyenv/versions/3.10.4/envs/venv-streamlit-3.10.4/lib/python3.10/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/cnmfs/ciadosorriso-pyspark/data/cs-relatorios-repasses/pandasai.json'
