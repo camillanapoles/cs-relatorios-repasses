@@ -1,0 +1,20 @@
+pretty-jupyter
+ipywidgets
+ipykernel
+ipython
+fuzzywuzzy
+pandarallel
+streamlit
+numpy
+pandas
+
+# bokeh
+# lckr-jupyterlab-variableinspector
+# jupyterlab-system-monitor
+# formatter
+# jupyterhub
+# pivottablejs
+# datapane 
+# ipydatagrid 
+# ipyparallel 
+# qtconsole 

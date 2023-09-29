@@ -1,0 +1,1249 @@
+{
+"select * from (\n\tselect \n\t\t'olinda' as 'unidade',\n\t\tc.nome as 'convenio',\n\t\ttc.descricao as 'tabela_convenio',\n\t\tcase\n\t\t\twhen tc.tipo_id = 94 then 'convenio'\n\t\t\twhen tc.tipo_id = 22 then 'particular'\n\t\t\telse 'outros'\n\t\tend as 'tipo_tabela',\n\t\ttc.situacao as 'situacao_tabela_convenio' \n\tfrom csolinda.tabelas_convenios tc \n\tinner join csolinda.convenio_ligacoes_tabela clt on clt.tabela_convenio_id = tc.id \n\tinner join csolinda.convenios c on clt.convenio_id  = c.id\n) tab_convenios_olinda\nunion\nselect * from (\n\tselect \n\t\t'boavista' as 'unidade',\n\t\tc.nome as 'convenio',\n\t\ttc.descricao as 'tabela_convenio',\n\t\tcase\n\t\t\twhen tc.tipo_id = 94 then 'convenio'\n\t\t\twhen tc.tipo_id = 22 then 'particular'\n\t\t\telse 'outros'\n\t\tend as 'tipo_tabela',\n\t\ttc.situacao as 'situacao_tabela_convenio' \n\tfrom csboavista.tabelas_convenios tc \n\tinner join csboavista.convenio_ligacoes_tabela clt on clt.tabela_convenio_id = tc.id \n\tinner join csboavista.convenios c on clt.convenio_id  = c.id\n) tab_convenios_boavista\nunion\nselect * from (\n\tselect \n\t\t'paulista' as 'unidade',\n\t\tc.nome as 'convenio',\n\t\ttc.descricao as 'tabela_convenio',\n\t\tcase\n\t\t\twhen tc.tipo_id = 94 then 'convenio'\n\t\t\twhen tc.tipo_id = 22 then 'particular'\n\t\t\telse 'outros'\n\t\tend as 'tipo_tabela',\n\t\ttc.situacao as 'situacao_tabela_convenio' \n\tfrom cspaulista.tabelas_convenios tc \n\tinner join cspaulista.convenio_ligacoes_tabela clt on clt.tabela_convenio_id = tc.id \n\tinner join cspaulista.convenios c on clt.convenio_id  = c.id\n) tab_convenios_paulista\nunion\nselect * from (\n\tselect \n\t\t'pina' as 'unidade',\n\t\tc.nome as 'convenio',\n\t\ttc.descricao as 'tabela_convenio',\n\t\tcase\n\t\t\twhen tc.tipo_id = 94 then 'convenio'\n\t\t\twhen tc.tipo_id = 22 then 'particular'\n\t\t\telse 'outros'\n\t\tend as 'tipo_tabela',\n\t\ttc.situacao as 'situacao_tabela_convenio' \n\tfrom cspina.tabelas_convenios tc \n\tinner join cspina.convenio_ligacoes_tabela clt on clt.tabela_convenio_id = tc.id \n\tinner join cspina.convenios c on clt.convenio_id  = c.id\n) tab_convenios_pina\n": [
+	{
+		"unidade" : "olinda",
+		"convenio" : "HAPVIDA",
+		"tabela_convenio" : "TABELA HAPVIDA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "ODONTOLIFE",
+		"tabela_convenio" : "Tabela ODONTOLIFE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "PETROBRAS ",
+		"tabela_convenio" : "Tabela Petrobras",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "PORTO SEGURO",
+		"tabela_convenio" : "Tabela PORTO SEGURO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "UNIMED ODONTO",
+		"tabela_convenio" : "Tabela UNIMED ODONTO - OLINDA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "SASSEPE ",
+		"tabela_convenio" : "Tabela SASSEPE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR CIRURGIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "SULAMERICA",
+		"tabela_convenio" : "Tabela SULAMERICA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "PREVIDENT",
+		"tabela_convenio" : "TABELA PREVIDENT - OLINDA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "METLIFE",
+		"tabela_convenio" : "Tabela METLIFE - OLINDA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "PREVSYSTEM",
+		"tabela_convenio" : "TABELA PREVSYSTEM - OLINDA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "GOLDEN CROSS",
+		"tabela_convenio" : "TABELA GOLDEN CROSS - OLINDA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "ODONTOGROUP",
+		"tabela_convenio" : "Tabela ODONTOGROUP - OLINDA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "REDE ODONTO EMPRESAS",
+		"tabela_convenio" : "Tabela REDE ODONTO EMPRESAS - OLINDA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "PRODENT",
+		"tabela_convenio" : "TABELA PRODENT",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "INTERODONTO",
+		"tabela_convenio" : "Tabela INTERODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "AMIL",
+		"tabela_convenio" : "Tabela AMIL OLINDA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "BRAZIL DENTAL",
+		"tabela_convenio" : "Tabela BRAZIL DENTAL OLINDA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "ODONTOPREV",
+		"tabela_convenio" : "Tabela ODONTOPREV",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "ODONTOPREV",
+		"tabela_convenio" : "Tabela REDE UNNA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR DIAGNOSTICO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ENDODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "ODONTO S A",
+		"tabela_convenio" : "Tabela ODONTO S A",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ODONTOLOGIA RESTAURADORA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "VAI BEM ",
+		"tabela_convenio" : "Tabela VAI BEM ",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "SEMPRE ODONTO ",
+		"tabela_convenio" : "Tabela SEMPRE ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "Tabela ORTOCLIN",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ODONTOPEDIATRIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "REDE UNNA",
+		"tabela_convenio" : "Tabela REDE UNNA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "SASSEPE ",
+		"tabela_convenio" : "Tabela de Insumos",
+		"tipo_tabela" : "outros",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "Tabela ORTOCLIN PEDIATRIA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "ODONTOSYSTEM",
+		"tabela_convenio" : "Tabela ODONTO SYSTEM",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "AESP ODONTO ",
+		"tabela_convenio" : "Tabela AESP ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "ODONTOGROUP",
+		"tabela_convenio" : "Tabela ODONTOGROUP PEDIATRIA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "TABELA CLIN KIT",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "SORRISO DO BEM",
+		"tabela_convenio" : "AMB 90",
+		"tipo_tabela" : "outros",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ORTODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ORTOPEDIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PACIENTES ESPECIAIS",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PERIODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PREVENCAO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PROTESE ",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR RADIOLOGIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR VENDAS PRODUTOS",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "EXMED",
+		"tabela_convenio" : "TABELA EXMED",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ENCAMINHAMENTO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Particular",
+		"tabela_convenio" : "Tabela Particular - Estoque Caixa",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "olinda",
+		"convenio" : "Teste",
+		"tabela_convenio" : "Tabela Particular - Estoque Caixa",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "AMIL",
+		"tabela_convenio" : "Tabela AMIL BOA VISTA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "HAPVIDA",
+		"tabela_convenio" : "Tabela HAPVIDA",
+		"tipo_tabela" : "outros",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "ODONTOGROUP",
+		"tabela_convenio" : "Tabela ODONTOGROUP",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "ODONTOLIFE",
+		"tabela_convenio" : "Tabela ODONTOLIFE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "PETROBRAS ",
+		"tabela_convenio" : "Tabela Petrobras",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "PREVSYSTEM",
+		"tabela_convenio" : "Tabela Prevsystem",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "GOLDEN CROSS",
+		"tabela_convenio" : "Tabela Golden Cross",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "PORTO SEGURO",
+		"tabela_convenio" : "Tabela PORTO SEGURO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "METLIFE",
+		"tabela_convenio" : "Tabela METLIFE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "BRAZIL DENTAL",
+		"tabela_convenio" : "Tabela BRAZIL DENTAL BOA VISTA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "UNIMED ODONTO",
+		"tabela_convenio" : "TABELA UNIMED ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "SASSEPE ",
+		"tabela_convenio" : "Tabela SASSEPE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "REDE ODONTO EMPRESAS",
+		"tabela_convenio" : "Tabela REDE ODONTO EMPRESAS - BOA VISTA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR CIRURGIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "PREVIDENT",
+		"tabela_convenio" : "TABELA PREVIDENT - BOA VISTA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "ODONTO S A",
+		"tabela_convenio" : "TABELA ODONTO S.A",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "SULAMERICA",
+		"tabela_convenio" : "Tabela SULAMERICA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "PRODENT",
+		"tabela_convenio" : "TABELA PRODENT",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "REDE UNNA",
+		"tabela_convenio" : "Tabela ODONTOPREV",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "INTERODONTO",
+		"tabela_convenio" : "Tabela INTERODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "ODONTOPREV",
+		"tabela_convenio" : "Tabela ODONTOPREV",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "PLANO ORTODONTICO",
+		"tabela_convenio" : "TABELA ORTODONTIA",
+		"tipo_tabela" : "outros",
+		"situacao_tabela_convenio" : "inativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR DIAGNOSTICO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "CEAME",
+		"tabela_convenio" : "Tabela Ceame",
+		"tipo_tabela" : "outros",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ENDODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ODONTOLOGIA RESTAURADORA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "SEMPRE ODONTO ",
+		"tabela_convenio" : "Tabela SEMPRE ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "Tabela ORTOCLIN",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "REDE UNNA",
+		"tabela_convenio" : "Tabela REDE UNNA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "ODONTOGROUP",
+		"tabela_convenio" : "Tabela ODONTOGROUP PEDIATRIA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "Tabela ORTOCLIN PEDIATRIA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "SAUDE RECIFE - RECIPREV",
+		"tabela_convenio" : "Tabela SAUDE RECIFE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "AESP ODONTO ",
+		"tabela_convenio" : "Tabela AESP ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "ODONTOSYSTEM",
+		"tabela_convenio" : "TABELA ODONTOSYSTEM",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "TABELA CLIN KIT",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ODONTOPEDIATRIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ORTODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ORTOPEDIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PACIENTES ESPECIAIS",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PERIODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PREVENCAO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PROTESE ",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR RADIOLOGIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR VENDAS PRODUTOS",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "EXMED",
+		"tabela_convenio" : "TABELA EXMED",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "boavista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ENCAMINHAMENTO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "HAPVIDA",
+		"tabela_convenio" : "Tabela HAPVIDA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "ODONTOGROUP",
+		"tabela_convenio" : "Tabela ODONTOGROUP",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "ODONTOLIFE",
+		"tabela_convenio" : "Tabela ODONTOLIFE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "PETROBRAS ",
+		"tabela_convenio" : "Tabela Petrobras",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "PREVSYSTEM",
+		"tabela_convenio" : "Tabela PREVSYSTEM",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "GOLDEN CROSS",
+		"tabela_convenio" : "Tabela Golden Cross",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "GOLDEN CROSS",
+		"tabela_convenio" : "GOLDEN TEST",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "PORTO SEGURO",
+		"tabela_convenio" : "Tabela PORTO SEGURO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "METLIFE",
+		"tabela_convenio" : "Tabela METLIFE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "UNIMED ODONTO",
+		"tabela_convenio" : "Tabela UNIMED ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "SASSEPE ",
+		"tabela_convenio" : "TABELA SASSEPE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "REDE ODONTO EMPRESAS",
+		"tabela_convenio" : "Tabela REDE ODONTO EMPRESAS",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "PREVIDENT",
+		"tabela_convenio" : "TABELA PREVIDENT - PAULISTA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "PRODENT",
+		"tabela_convenio" : "TABELA PRODENT",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "SULAMERICA",
+		"tabela_convenio" : "Tabela SULAMERICA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "REDE UNNA",
+		"tabela_convenio" : "Tabela REDE UNNA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "BRAZIL DENTAL",
+		"tabela_convenio" : "Tabela BRAZIL DENTAL - PAULISTA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "AMIL",
+		"tabela_convenio" : "Tabela AMIL PAULISTA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "INTERODONTO",
+		"tabela_convenio" : "Tabela INTERODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR CIRURGIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR DIAGNOSTICO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ENDODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "VAI BEM ",
+		"tabela_convenio" : "Tabela VAI BEM",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "SEMPRE ODONTO ",
+		"tabela_convenio" : "Tabela SEMPRE ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "Tabela ORTOCLIN",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "ODONTO S A",
+		"tabela_convenio" : "Tabela ODONTO S A",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "ODONTOGROUP",
+		"tabela_convenio" : "Tabela ODONTOGROUP PEDIATRIA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "Tabela ORTOCLIN PEDIATRIA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "Tabela ORTOCLIN PEDIATRIA 2",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "AESP ODONTO ",
+		"tabela_convenio" : "Tabela AESP ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "TABELA CLIN KIT",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ODONTOLOGIA RESTAURADORA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ODONTOPEDIATRIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ORTODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ORTOPEDIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PACIENTES ESPECIAIS",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PERIODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PREVENCAO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PROTESE",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR RADIOLOGIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR VENDAS PRODUTOS",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ENCAMINHAMENTO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "paulista",
+		"convenio" : "Particular",
+		"tabela_convenio" : "Tabela Particular - Estoque Caixa",
+		"tipo_tabela" : "outros",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "HAPVIDA",
+		"tabela_convenio" : "Tabela HAPVIDA - PINA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "ODONTOGROUP",
+		"tabela_convenio" : "Tabela ODONTOGROUP",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "ODONTOLIFE",
+		"tabela_convenio" : "Tabela ODONTOLIFE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "PETROBRAS ",
+		"tabela_convenio" : "Tabela Petrobras",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "PREVSYSTEM",
+		"tabela_convenio" : "Tabela Prevsystem",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "PORTO SEGURO",
+		"tabela_convenio" : "Tabela PORTO SEGURO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "METLIFE",
+		"tabela_convenio" : "Tabela METLIFE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "UNIMED ODONTO",
+		"tabela_convenio" : "Tabela UNIMED ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "SASSEPE ",
+		"tabela_convenio" : "TABELA SASSEPE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "REDE ODONTO EMPRESAS",
+		"tabela_convenio" : "Tabela REDE ODONTO EMPRESAS",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR CIRURGIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "PREVIDENT",
+		"tabela_convenio" : "Tabela PREVIDENT - PINA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "PRODENT",
+		"tabela_convenio" : "Tabela PRODENT",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "SULAMERICA",
+		"tabela_convenio" : "Tabela SULAMERICA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "REDE UNNA",
+		"tabela_convenio" : "Tabela REDE UNNA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "BRAZIL DENTAL",
+		"tabela_convenio" : "Tabela BRAZIL DENTAL - PINA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "AMIL",
+		"tabela_convenio" : "Tabela AMIL - PINA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "ODONTOPREV",
+		"tabela_convenio" : "Tabela ODONTOPREV",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "REDE UNNA",
+		"tabela_convenio" : "Tabela ODONTOPREV",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "INTERODONTO",
+		"tabela_convenio" : "Tabela INTERODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR DIAGNOSTICO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ENDODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "ODONTO S A",
+		"tabela_convenio" : "Tabela ODONTO S.A",
+		"tipo_tabela" : "outros",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "SEMPRE ODONTO ",
+		"tabela_convenio" : "Tabela SEMPRE ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "Tabela ORTOCLIN",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "ODONTOGROUP",
+		"tabela_convenio" : "Tabela ODONTOGROUP PEDIATRIA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "Tabela ORTOCLIN PEDIATRIA",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "AESP ODONTO ",
+		"tabela_convenio" : "Tabela AESP ODONTO",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "SAUDE RECIFE - RECIPREV",
+		"tabela_convenio" : "Tabela SAUDE RECIFE",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ODONTOLOGIA RESTAURADORA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "CLIN PLANO ODONTOLOGICO DIGITAL",
+		"tabela_convenio" : "TABELA CLIN KIT",
+		"tipo_tabela" : "particular",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ODONTOPEDIATRIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ORTODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ORTOPEDIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PACIENTES ESPECIAIS",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PERIODONTIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PREVENCAO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR PROTESE ",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR RADIOLOGIA",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR VENDAS PRODUTOS",
+		"tipo_tabela" : "outros",
+		"situacao_tabela_convenio" : "ativa"
+	},
+	{
+		"unidade" : "pina",
+		"convenio" : "Particular",
+		"tabela_convenio" : "TABELA PARTICULAR ENCAMINHAMENTO",
+		"tipo_tabela" : "convenio",
+		"situacao_tabela_convenio" : "ativa"
+	}
+]}
