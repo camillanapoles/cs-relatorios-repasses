@@ -1,0 +1,3 @@
+[submodule "data/cs-relatorios-repasses"]
+	path = data/cs-relatorios-repasses
+	url = https://github.com/camillanapoles/cs-relatorios-repasses
