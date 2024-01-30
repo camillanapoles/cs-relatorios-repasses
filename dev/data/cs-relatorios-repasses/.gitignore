@@ -1,0 +1,6 @@
+tmp/
+.env
+*.py
+*.ipynb
+cache/
+ipynb_checkpoint
